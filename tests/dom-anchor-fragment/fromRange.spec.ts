@@ -1,31 +1,16 @@
 import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
+import htmlMock from './mocks/html';
 import fromRange from '../../dom-anchor-fragment/fromRange';
 
-describe('DOM Anchor fragment - fromRange', () => {
+describe('DOM anchor fragment - fromRange', () => {
   let dom: JSDOM;
   let root: HTMLElement;
   let range: Range;
 
   beforeEach(() => {
-    dom = new JSDOM(`
-      <html>
-        <body>
-          <div id="root">
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et
-            malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-            semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend
-            leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat
-            wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet,
-            wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum
-            orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in
-            turpis pulvinar facilisis. Ut felis.</p>
-          </div>
-        </body>
-      </html>
-    `);
+    dom = new JSDOM(htmlMock);
 
     // globals
     global.Node = dom.window.Node;

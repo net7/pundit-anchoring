@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register ./**/*.spec.ts"
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
   },
   "private": true,
   "repository": {
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/chai": "^4.2.13",
+    "@types/jsdom": "^16.2.4",
     "@types/mocha": "^8.0.3",
     "@types/typescript": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.3.0",

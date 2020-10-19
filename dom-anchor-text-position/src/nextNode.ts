@@ -16,4 +16,4 @@ function nextNode(node: Node, skipChildren = false): Node {
   return n;
 }
 
-export default nextNode;
+export { nextNode };

@@ -1,4 +1,4 @@
-import { TextPosition, TextSelector } from './interfaces';
+import { TextQuotePosition, TextQuoteSelector } from './interfaces';
 
 // The DiffMatchPatch bitap has a hard 32-character pattern length limit.
 const SLICE_LENGTH = 32;
@@ -6,8 +6,8 @@ const CONTEXT_LENGTH = SLICE_LENGTH;
 
 const fromTextPosition = (
   root: HTMLElement,
-  position: TextPosition
-): TextSelector => {
+  position: TextQuotePosition
+): TextQuoteSelector => {
   const { start, end } = position;
   const exact = root.textContent.substr(start, end - start);
   const prefixStart = Math.max(0, start - CONTEXT_LENGTH);

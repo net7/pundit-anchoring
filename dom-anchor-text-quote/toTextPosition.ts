@@ -1,17 +1,17 @@
 /* eslint-disable no-bitwise */
 import DiffMatchPatch from 'diff-match-patch';
-import { TextPosition, TextSelector } from './interfaces';
+import { TextQuotePosition, TextQuoteSelector } from './interfaces';
 
 const SLICE_LENGTH = 32;
 const SLICE_RE = new RegExp(`(.|[\r\n]){1,${String(SLICE_LENGTH)}}`, 'g');
 
 const toTextPosition = (
   root: HTMLElement,
-  selector: TextSelector,
+  selector: TextQuoteSelector,
   options: {
     hint?: number;
   } = {}
-): TextPosition => {
+): TextQuotePosition => {
   const { exact, prefix, suffix } = selector;
   const { hint } = options;
   const dmp = new DiffMatchPatch();

@@ -1,10 +1,10 @@
-export type TextSelector = {
+export type TextQuoteSelector = {
   exact: string;
-  prefix: string;
-  suffix: string;
+  prefix?: string;
+  suffix?: string;
 }
 
-export type TextPosition = {
+export type TextQuotePosition = {
   start: number;
   end: number;
 }

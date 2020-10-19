@@ -1,14 +1,14 @@
 import * as textPosition from 'dom-anchor-text-position';
-import { TextSelector } from './interfaces';
+import { TextQuoteSelector } from './interfaces';
 import toTextPosition from './toTextPosition';
 
 const toRange = (
   root: HTMLElement,
-  selector: TextSelector,
+  selector: TextQuoteSelector,
   options: {
     hint?: number;
   } = {}
-): TextSelector => {
+): Range => {
   const position = toTextPosition(root, selector, options);
   if (position === null) {
     return null;

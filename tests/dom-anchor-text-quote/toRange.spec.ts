@@ -26,14 +26,14 @@ describe('DOM anchor text quote - toRange', () => {
     const exact = 'commodo vitae';
     const range = toRange(root, { exact });
     const text = range.toString();
-    expect(text).equal('commodo vitae');
+    expect(text).equal(exact);
   });
 
   it('finds an exact quote longer than 32 characters', () => {
     const exact = 'Quisque sit amet est et sapien ullamcorper pharetra';
     const range = toRange(root, { exact });
     const text = range.toString();
-    expect(text).equal('commodo vitae');
+    expect(text).equal(exact);
   });
 
   it('finds a close exact quote', () => {

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
-import htmlMock from './mocks/html';
+import htmlMock from '../mocks/html';
 import fromSelector from '../../dom-anchor-fragment/fromSelector';
 
 describe('DOM anchor fragment - fromSelector', () => {

@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/net7/pundit-3-anchoring#readme",
   "dependencies": {
-    "@pundit-3/common": "git+ssh://github.com/net7/pundit-3-common#master"
+    "@pundit-3/common": "git+ssh://github.com/net7/pundit-3-common#master",
+    "diff-match-patch": "^1.0.5",
+    "dom-anchor-text-position": "^5.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.13",

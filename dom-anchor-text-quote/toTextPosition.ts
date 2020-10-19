@@ -1,5 +1,5 @@
 /* eslint-disable no-bitwise */
-import DiffMatchPatch from 'diff-match-patch';
+import * as DiffMatchPatch from 'diff-match-patch';
 import { TextQuotePosition, TextQuoteSelector } from './interfaces';
 
 const SLICE_LENGTH = 32;

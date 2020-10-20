@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
 import htmlMock from '../mocks/html';
-import fromSelector from '../../dom-anchor-fragment/fromSelector';
+import fromSelector from '../../src/dom-anchor-fragment/fromSelector';
 
 describe('DOM anchor fragment - fromSelector', () => {
   let dom: JSDOM;

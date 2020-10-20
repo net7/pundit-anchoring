@@ -2,8 +2,8 @@ import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
 import htmlMock from '../mocks/html';
-import fromTextPosition from '../../dom-anchor-text-quote/fromTextPosition';
-import { TextQuotePosition } from '../../dom-anchor-text-quote/interfaces';
+import fromTextPosition from '../../src/dom-anchor-text-quote/fromTextPosition';
+import { TextQuotePosition } from '../../src/dom-anchor-text-quote/interfaces';
 
 const position: TextQuotePosition = {
   start: 420,

@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
+import fromRange from '../../src/dom-anchor-fragment/fromRange';
 import htmlMock from '../mocks/html';
-import fromRange from '../../dom-anchor-fragment/fromRange';
 
 describe('DOM anchor fragment - fromRange', () => {
   let dom: JSDOM;

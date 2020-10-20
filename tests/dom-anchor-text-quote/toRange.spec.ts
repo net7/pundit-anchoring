@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
 import htmlMock from '../mocks/html';
-import toRange from '../../dom-anchor-text-quote/toRange';
+import toRange from '../../src/dom-anchor-text-quote/toRange';
 
 function simplify(str) {
   return str.replace(/\s+/g, ' ');

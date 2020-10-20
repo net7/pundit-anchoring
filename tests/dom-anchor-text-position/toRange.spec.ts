@@ -1,8 +1,8 @@
 import { should } from 'chai';
 import { JSDOM } from 'jsdom';
 import 'mocha';
-import { toRange } from '../../dom-anchor-text-position/src';
-import htmlMock from './mocks/html';
+import { toRange } from '../../src/dom-anchor-text-position';
+import htmlMock from '../mocks/ugly-html';
 
 should(); // enable should assertions
 

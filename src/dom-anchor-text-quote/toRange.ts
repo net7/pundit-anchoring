@@ -1,4 +1,4 @@
-import * as textPosition from 'dom-anchor-text-position';
+import * as textPosition from '../dom-anchor-text-position';
 import { TextQuoteSelector } from './interfaces';
 import toTextPosition from './toTextPosition';
 

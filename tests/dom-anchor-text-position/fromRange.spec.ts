@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { JSDOM } from 'jsdom';
 import 'mocha';
-import { fromRange } from '../../dom-anchor-text-position/src/fromRange';
-import htmlMock from './mocks/html';
+import { fromRange } from '../../src/dom-anchor-text-position/fromRange';
+import htmlMock from '../mocks/ugly-html';
 
 describe('DOM anchor text position', () => {
   let dom: JSDOM;

@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
 import htmlMock from '../mocks/html';
-import toRange from '../../dom-anchor-fragment/toRange';
+import toRange from '../../src/dom-anchor-fragment/toRange';
 
 describe('DOM anchor fragment - toRange', () => {
   let dom: JSDOM;

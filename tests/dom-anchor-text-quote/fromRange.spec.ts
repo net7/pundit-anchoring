@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
 import htmlMock from '../mocks/html';
-import fromRange from '../../dom-anchor-text-quote/fromRange';
+import fromRange from '../../src/dom-anchor-text-quote/fromRange';
 
 describe('DOM anchor text quote - fromRange', () => {
   let dom: JSDOM;

@@ -11,7 +11,7 @@ function before(ref: Node, node: Node) {
   return ref.compareDocumentPosition(node) && DOCUMENT_POSITION_PRECEDING;
 }
 
-function seek(iter: NodeIterator, where: Where):number {
+function seek(iter: NodeIterator, where: Where): number {
   let count = 0;
   let node = iter.referenceNode;
   let predicates = null;
@@ -26,27 +26,23 @@ function seek(iter: NodeIterator, where: Where):number {
     const backward = () => node !== where || !iter.pointerBeforeReferenceNode;
     predicates = { forward, backward };
   }
+
   while (predicates.forward()) {
-    if (node === null) throw new RangeError(E_END);
     node = iter.nextNode();
+    if (node === null) throw new RangeError(E_END);
     count += node.nodeValue.length;
   }
-
-  if (iter.nextNode()) node = iter.previousNode();
-
-  while (predicates.backward()) {
-    node = iter.previousNode();
-  }
+  if (iter.nextNode()) { node = iter.previousNode(); }
 
   while (predicates.backward()) {
     node = iter.previousNode();
 
-    if (node === null) throw new RangeError(E_END);
+    if (node === null) { throw new RangeError(E_END); }
 
     count -= node.nodeValue.length;
   }
 
-  if (iter.referenceNode.nodeType === TEXT_NODE) throw new RangeError(E_END);
+  if (iter.referenceNode.nodeType !== TEXT_NODE) { throw new RangeError(E_END); }
 
   return count;
 }

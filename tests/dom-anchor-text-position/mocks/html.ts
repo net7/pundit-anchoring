@@ -1,5 +1,4 @@
-export default `
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et
+export default `<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et
   malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
   ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
   semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend
@@ -10,5 +9,4 @@ export default `
   turpis pulvinar facilisis. Ut felis.</p>
 <hr>
 <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue,
-   eu vulputate magna eros eu erat.</p>
-`;
+   eu vulputate magna eros eu erat.</p>`;

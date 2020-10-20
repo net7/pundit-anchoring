@@ -2,8 +2,10 @@
   "name": "@net7/pundit-3-anchoring",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "test:watch": "mocha -r ts-node/register --watch --watch-files src, tests/**/*.ts"
   },
@@ -19,7 +21,7 @@
   },
   "homepage": "https://github.com/net7/pundit-3-anchoring#readme",
   "dependencies": {
-    "@pundit-3/common": "git+ssh://github.com/net7/pundit-3-common#master",
+    "@pundit-3/common": "git+ssh://github.com/net7/pundit-3-common#develop",
     "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {
@@ -49,5 +51,8 @@
     "*.ts": [
       "eslint --fix"
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

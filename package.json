@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register .tests/**/*.spec.ts",
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "test:watch": "mocha --require ts-node/register --watch --watch-files src, tests/**/*.ts"
   },
   "private": true,

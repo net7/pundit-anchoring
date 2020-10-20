@@ -1,5 +1,5 @@
 {
-  "name": "@net7/pundit-3-anchoring",
+  "name": "@pundit-3/anchoring",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/net7/pundit-3-anchoring#readme",
   "dependencies": {
-    "@pundit-3/common": "git+ssh://github.com/net7/pundit-3-common#develop",
+    "@pundit-3/common": "git+ssh://git@github.com/net7/pundit-3-common.git#develop",
     "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {

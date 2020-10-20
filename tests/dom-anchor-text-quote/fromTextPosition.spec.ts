@@ -1,11 +1,11 @@
 import { expect } from 'chai';
 import 'mocha';
 import { JSDOM } from 'jsdom';
+import { Anchoring } from '@pundit-3/common';
 import htmlMock from '../mocks/html';
 import fromTextPosition from '../../src/dom-anchor-text-quote/fromTextPosition';
-import { TextQuotePosition } from '../../src/dom-anchor-text-quote/interfaces';
 
-const position: TextQuotePosition = {
+const position: Anchoring.TextPosition = {
   start: 420,
   end: 433
 };

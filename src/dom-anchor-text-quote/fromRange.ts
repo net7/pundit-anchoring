@@ -1,11 +1,11 @@
+import { Anchoring } from '@pundit-3/common';
 import * as textPosition from '../../src/dom-anchor-text-position';
-import { TextQuoteSelector } from './interfaces';
 import fromTextPosition from './fromTextPosition';
 
 const fromRange = (
   root: HTMLElement,
   range: Range
-): TextQuoteSelector => {
+): Anchoring.TextQuoteSelector => {
   const position = textPosition.fromRange(root, range);
   return fromTextPosition(root, position);
 };

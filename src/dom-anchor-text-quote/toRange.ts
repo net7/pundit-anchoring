@@ -1,10 +1,10 @@
+import { Anchoring } from '@pundit-3/common';
 import * as textPosition from '../dom-anchor-text-position';
-import { TextQuoteSelector } from './interfaces';
 import toTextPosition from './toTextPosition';
 
 const toRange = (
   root: HTMLElement,
-  selector: TextQuoteSelector,
+  selector: Anchoring.TextQuoteSelector,
   options: {
     hint?: number;
   } = {}

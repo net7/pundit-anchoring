@@ -1,4 +1,4 @@
-import { Anchoring } from '@pundit-3/common';
+import { TextPosition, TextQuoteSelector } from '../types';
 
 // The DiffMatchPatch bitap has a hard 32-character pattern length limit.
 const SLICE_LENGTH = 32;
@@ -6,8 +6,8 @@ const CONTEXT_LENGTH = SLICE_LENGTH;
 
 const fromTextPosition = (
   root: HTMLElement,
-  position: Anchoring.TextPosition
-): Anchoring.TextQuoteSelector => {
+  position: TextPosition
+): TextQuoteSelector => {
   const { start, end } = position;
   const exact = root.textContent.substr(start, end - start);
   const prefixStart = Math.max(0, start - CONTEXT_LENGTH);

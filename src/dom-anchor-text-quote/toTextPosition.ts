@@ -1,17 +1,17 @@
 /* eslint-disable no-bitwise */
-import { Anchoring } from '@pundit-3/common';
 import * as DiffMatchPatch from 'diff-match-patch';
+import { TextQuoteSelector, TextPosition } from '../types';
 
 const SLICE_LENGTH = 32;
 const SLICE_RE = new RegExp(`(.|[\r\n]){1,${String(SLICE_LENGTH)}}`, 'g');
 
 const toTextPosition = (
   root: HTMLElement,
-  selector: Anchoring.TextQuoteSelector,
+  selector: TextQuoteSelector,
   options: {
     hint?: number;
   } = {}
-): Anchoring.TextPosition => {
+): TextPosition => {
   const { exact, prefix, suffix } = selector;
   const { hint } = options;
   const dmp = new DiffMatchPatch();

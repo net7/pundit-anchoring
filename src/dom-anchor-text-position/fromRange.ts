@@ -1,9 +1,5 @@
 import { rangeToString } from '.';
-
-type Selector = {
-  start: number;
-  end: number;
-}
+import { Selector } from '../types';
 
 function fromRange(root: Node, range: Range): Selector {
   let start = 0;

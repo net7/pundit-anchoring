@@ -1,10 +1,6 @@
-// imports
-import * as fragment from './dom-anchor-fragment';
-import * as position from './dom-anchor-text-position';
-import * as quote from './dom-anchor-text-quote';
-// public export
-export default {
-  fragment,
-  position,
-  quote,
-};
+// Public API
+export * as fragment from './dom-anchor-fragment';
+export * as position from './dom-anchor-text-position';
+export * as quote from './dom-anchor-text-quote';
+// Types
+export * from './types';

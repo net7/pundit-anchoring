@@ -1,5 +1,5 @@
-import { Anchoring } from '@pundit/common';
-declare const toTextPosition: (root: HTMLElement, selector: Anchoring.TextQuoteSelector, options?: {
+import { TextQuoteSelector, TextPosition } from '../types';
+declare const toTextPosition: (root: HTMLElement, selector: TextQuoteSelector, options?: {
     hint?: number;
-}) => Anchoring.TextPosition;
+}) => TextPosition;
 export default toTextPosition;

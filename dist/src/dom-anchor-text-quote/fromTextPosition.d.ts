@@ -1,3 +1,3 @@
-import { Anchoring } from '@pundit/common';
-declare const fromTextPosition: (root: HTMLElement, position: Anchoring.TextPosition) => Anchoring.TextQuoteSelector;
+import { TextPosition, TextQuoteSelector } from '../types';
+declare const fromTextPosition: (root: HTMLElement, position: TextPosition) => TextQuoteSelector;
 export default fromTextPosition;

@@ -1,3 +1,4 @@
+/* eslint-disable no-bitwise */
 import * as DiffMatchPatch from 'diff-match-patch';
 var SLICE_LENGTH = 32;
 var SLICE_RE = new RegExp("(.|[\r\n]){1," + String(SLICE_LENGTH) + "}", 'g');

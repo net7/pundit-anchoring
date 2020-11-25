@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "typeRoots": [ 
       "node_modules/@types", 
-      "@net7/pundit-3-anchoring"
+      "@net7/pundit-anchoring"
     ]
   },
   "ts-node": {

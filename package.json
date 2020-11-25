@@ -1,5 +1,5 @@
 {
-  "name": "@pundit-3/anchoring",
+  "name": "@pundit/anchoring",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -12,16 +12,16 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/net7/pundit-3-anchoring.git"
+    "url": "git+https://github.com/net7/pundit-anchoring.git"
   },
   "author": "Net7",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/net7/pundit-3-anchoring/issues"
+    "url": "https://github.com/net7/pundit-anchoring/issues"
   },
-  "homepage": "https://github.com/net7/pundit-3-anchoring#readme",
+  "homepage": "https://github.com/net7/pundit-anchoring#readme",
   "dependencies": {
-    "@pundit-3/common": "git+ssh://git@github.com/net7/pundit-3-common.git#develop",
+    "@pundit/common": "git+ssh://git@github.com/net7/pundit-common.git#develop",
     "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {

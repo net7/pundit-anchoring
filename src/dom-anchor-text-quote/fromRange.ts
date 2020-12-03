@@ -1,5 +1,5 @@
 import { TextQuoteSelector } from '../types';
-import * as textPosition from '../../src/dom-anchor-text-position';
+import * as textPosition from '../dom-anchor-text-position';
 import fromTextPosition from './fromTextPosition';
 
 const fromRange = (

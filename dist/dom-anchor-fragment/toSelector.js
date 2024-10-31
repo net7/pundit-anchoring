@@ -1,9 +1,9 @@
 var HTML_CONFORMS_TO_TEXT = 'https://tools.ietf.org/html/rfc3236';
 var SVG_CONFORMS_TO_TEXT = 'http://www.w3.org/TR/SVG/';
 var toSelector = function (root, id) {
-    var el = root.querySelector("#" + id);
+    var el = root.querySelector("#".concat(id));
     if (el === null) {
-        throw new Error("no element found with id \"" + id + "\"");
+        throw new Error("no element found with id \"".concat(id, "\""));
     }
     return {
         type: 'FragmentSelector',

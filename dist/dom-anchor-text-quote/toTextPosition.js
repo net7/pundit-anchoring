@@ -1,7 +1,7 @@
 /* eslint-disable no-bitwise */
 import * as DiffMatchPatch from 'diff-match-patch';
 var SLICE_LENGTH = 32;
-var SLICE_RE = new RegExp("(.|[\r\n]){1," + String(SLICE_LENGTH) + "}", 'g');
+var SLICE_RE = new RegExp("(.|[\r\n]){1,".concat(String(SLICE_LENGTH), "}"), 'g');
 var toTextPosition = function (root, selector, options) {
     if (options === void 0) { options = {}; }
     var exact = selector.exact, prefix = selector.prefix, suffix = selector.suffix;

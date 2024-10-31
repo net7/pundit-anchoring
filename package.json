@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --build --clean",
+    "build": "tsc",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "test:watch": "mocha -r ts-node/register --watch --watch-files src, tests/**/*.ts"
   },
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/net7/pundit-anchoring#readme",
   "dependencies": {
-    "@pundit/common": "git+ssh://git@github.com/net7/pundit-common.git#develop",
     "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {

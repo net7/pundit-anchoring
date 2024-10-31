@@ -1,12 +1,12 @@
-export declare type Selector = {
+export type Selector = {
     start: number;
     end: number;
 };
-export declare type TextPosition = {
+export type TextPosition = {
     start: number;
     end: number;
 };
-export declare type TextQuoteSelector = {
+export type TextQuoteSelector = {
     exact: string;
     prefix?: string;
     suffix?: string;

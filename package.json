@@ -1,6 +1,6 @@
 {
   "name": "@pundit/anchoring",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/net7/pundit-anchoring#readme",
   "dependencies": {
-    "@pundit/common": "git+ssh://git@github.com/net7/pundit-common.git#develop",
     "diff-match-patch": "^1.0.5"
   },
   "devDependencies": {
